@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script src="jquery-1.12.4.js"></script>
+<script>
+    $.ajax({
+        type:'get',
+        url:'http://localhost:2020/zhangshuang',
+        success:function (data){
+            console.log(data)
+        },
+        error:function (){
+            alert('请求失败')
+        }
+    })
+</script>
+</html>
